@@ -15,5 +15,7 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Home');
+    return Inertia::render('Home', [
+        'title' => 'props recebida do servidor'
+    ]);
 });
